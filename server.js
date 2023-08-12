@@ -14,7 +14,8 @@ const allowCrossDomain = (req, res, next) => {
   res.header("Access-Control-Allow-Headers", "*");
   next();
 };
-
+const swaggerUI = require("swagger-ui-express");
+const docs = require("./docs");
 app.use(allowCrossDomain);
 
 app.use(express.urlencoded({ extended: true }));
@@ -46,7 +47,10 @@ app.use((err, req, res, next) => {
     next(err);
   }
 });
+app.use("/swagger", swaggerUI.serve, swaggerUI.setup(docs));
 
 app.listen(port, () => {
   console.log(`app listening on port ${port}`);
 });
+
+module.exports = app;

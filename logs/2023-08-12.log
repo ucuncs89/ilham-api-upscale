@@ -1,1 +1,8 @@
 ::ffff:127.0.0.1 - - [12/Aug/2023:09:22:25 +0000] "POST /tasks HTTP/1.1" 400 66 "-" "insomnia/2023.3.0"
+::ffff:127.0.0.1 - - [12/Aug/2023:11:35:39 +0000] "PATCH /tasks/1 HTTP/1.1" 400 66 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0"
+::ffff:127.0.0.1 - - [12/Aug/2023:11:37:20 +0000] "GET /tasks/1 HTTP/1.1" 404 62 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0"
+::ffff:127.0.0.1 - - [12/Aug/2023:11:37:25 +0000] "GET /tasks/20 HTTP/1.1" 404 62 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0"
+::ffff:127.0.0.1 - - [12/Aug/2023:11:37:29 +0000] "GET /tasks/3 HTTP/1.1" 404 62 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0"
+::ffff:127.0.0.1 - - [12/Aug/2023:11:54:08 +0000] "GET /book HTTP/1.1" 404 143 "-" "-"
+::ffff:127.0.0.1 - - [12/Aug/2023:11:55:10 +0000] "POST /api/auth/login HTTP/1.1" 404 154 "-" "-"
+::ffff:127.0.0.1 - - [12/Aug/2023:11:56:23 +0000] "POST /api/auth/login HTTP/1.1" 404 154 "-" "-"
